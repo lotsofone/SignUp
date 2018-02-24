@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>933</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="s0widget" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-70</y>
+      <width>861</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <widget class="QLineEdit" name="s0lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>390</y>
+       <width>311</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>80</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>运动员名单</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s0add_player">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>370</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加运动员</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s0addgame">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>480</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加项目</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s0delete_player">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>410</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除运动员</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="playerlist">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>100</y>
+       <width>351</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s0deletegame">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>480</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除项目</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s0output_check">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>470</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输出完整核对表</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="s0comboBox">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>420</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>田赛(米)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>径赛(秒)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>420</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>成绩类型</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>450</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>小组赛人数</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>450</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>决赛人数</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="s0num_per_pre">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>450</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="s0num_per_final">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>450</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s0app">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>480</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>应用更改</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="s0student_id">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>340</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>310</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入学号</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s0_lock">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>470</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>报名锁定</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="save_button">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>400</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="gamelist">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>251</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>项目列表</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="s1widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>0</y>
+      <width>1001</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <widget class="QListWidget" name="pre_log_list">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>30</y>
+       <width>301</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s1_log_pre_bt">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>0</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>小组赛</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s1_log_final_bt">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>0</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>决赛</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="final_log_list">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>30</y>
+       <width>301</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s1print_all">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>400</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打印运动会排行总表</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="final_rank">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>30</y>
+       <width>301</width>
+       <height>171</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="school_rank">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>230</y>
+       <width>301</width>
+       <height>161</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>320</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>号码牌</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>320</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;==</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>350</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>成绩</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="line_grade">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>350</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_drug">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>380</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>药检</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="log_grade_button">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>350</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>录入==&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="log_drug_button">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>380</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>录入==&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>10</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>项目排名</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>210</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>学院排名</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="drug_box">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>380</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>阴性</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>阳性</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="s1get_id">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>320</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_enter_final">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>400</y>
+       <width>101</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进入决赛</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="s1reset">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>400</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>程序重置</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>s0widget</zorder>
+   <zorder>label</zorder>
+   <zorder>s1widget</zorder>
+   <zorder>gamelist</zorder>
+   <zorder>save_button</zorder>
+  </widget>
+  <widget class="QMenuBar" name="s1menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>933</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
